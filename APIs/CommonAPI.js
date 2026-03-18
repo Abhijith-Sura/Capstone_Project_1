@@ -2,7 +2,7 @@ import exp from 'express'
 import bycrypt from 'bcryptjs'
 import { UserTypeModel } from '../Models/UserModel.js';
 import { authenticate } from '../Services/authService.js';
-import { verifyToken } from '../middlewares/verifyToken.js';
+
 export const commonRouter = exp.Router()
 
 //login
@@ -18,7 +18,7 @@ commonRouter.post("/login", async (req, res) => {
     secure: false,
   });
   //send res
-  res.status(200).json({ message: "Login Successful", payload: user })
+  res.status(200).json({ message: "Login Successful", token, payload: user })
 })
 
 

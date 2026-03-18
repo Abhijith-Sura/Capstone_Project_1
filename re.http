@@ -54,12 +54,14 @@ Content-Type: application/json
 {
   "title": "bookkkk",
   "category": "hisfbefhtory",
-  "content": "he is a aejfbkgood boy"
+  "content": "he is a aejfbkgood boy lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }
 
 ###  Get a specific article
 GET http://localhost:4000/author-api/articles/69898c7c392d21846cd36f3f
 
+### Get all articles
+GET http://localhost:4000/author-api/articles
 
 ### Update an article
 PUT http://localhost:4000/author-api/articles
@@ -73,7 +75,7 @@ Content-Type: application/json
 }
 
 ### Soft delete an article
-PUT http://localhost:4000/author-api/articles/deactivate
+PATCH http://localhost:4000/author-api/articles/deactivate
 Content-Type: application/json
 
 {
@@ -114,8 +116,8 @@ POST http://localhost:4000/common-api/login
 Content-Type: application/json
 
 {
-  "email": "ram.author@example.com",
-  "password": "Author@12345"
+  "email": "akhilsura@gmail.com",
+  "password": "1234"
 }
 
 

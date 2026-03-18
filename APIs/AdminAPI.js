@@ -1,6 +1,5 @@
 import exp from 'express';
 import { UserTypeModel } from '../Models/UserModel.js';
-import { register } from '../Services/authService.js';
 export const adminRoute = exp.Router();
 
 
