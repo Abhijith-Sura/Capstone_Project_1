@@ -10,7 +10,7 @@ import cors from 'cors'
 config()
 const app=exp()
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin: ["http://localhost:5173", "https://your-vercel-url.vercel.app"],
     credentials:true
 } ))
 //add body parser middleware
