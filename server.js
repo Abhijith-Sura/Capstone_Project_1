@@ -12,7 +12,7 @@ const app=exp()
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://vercel.com/abhijith-suras-projects/capstone-frontend"
+    "https://capstone-frontend-olive.vercel.app/"
   ],
   credentials: true
 }));
